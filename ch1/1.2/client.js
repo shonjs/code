@@ -8,9 +8,13 @@ class Client {
   }
 
   // Creates a keccak256/SHA3 hash of some data
+<<<<<<< HEAD
   hash(data) {
+=======
+  toHash(data) {
+>>>>>>> 4eacdac17890917d8129dc804483490a027a03b4
     const dataStr = JSON.stringify(data);
-    return EthCrypto.hash.keccak256(data);
+    return EthCrypto.hash.keccak256(dataStr);
   }
 
   // Signs a hash of data with the client's private key
